@@ -38,13 +38,13 @@ Current results: 61 automated checks, 18 explicitly recorded fictional API scena
 To repeat the browser checks, install the optional tooling in a temporary folder and use an isolated server. This script deletes Alex’s fictional history on the dedicated test server at port 8033. Never point it at records you wish to keep.
 
 ```sh
-npm install --prefix /tmp/one-step-browser-tools playwright@1.56.1
+npm install --prefix /tmp/one-step-browser-tools playwright@1.62.1
 MODEL_MODE=mock DATABASE_PATH=/tmp/one-step-browser.sqlite3 .venv/bin/uvicorn app:app --app-dir backend --host 127.0.0.1 --port 8033
 # In a second terminal, from this repository:
 NODE_PATH=/tmp/one-step-browser-tools/node_modules node scripts/browser-check.cjs
 ```
 
-Google Chrome must be installed (`channel: chrome`). The submitted run used the bundled Playwright version recorded in verification. The optional installation command above is a portable recipe, not a claim that this precise optional version was used. The script records an actual foreground 60-second breathing interval, screenshots and a silent captioned screencast. Allow about two minutes. It neither contacts a support service nor calls a real model.
+Google Chrome must be installed (`channel: chrome`). The submitted run used Playwright 1.62.1; see verification for browser versions. The script records an actual foreground 60-second breathing interval, screenshots and a silent captioned screencast. Allow about two minutes. It neither contacts a support service nor calls a real model.
 
 ## Optional live evaluation — not yet performed
 

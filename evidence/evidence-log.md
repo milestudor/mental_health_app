@@ -15,3 +15,5 @@ All inputs are fictional. This is selected evidence, not a full chat export. Cre
 | Existing cap produced fallback rather than returning to mocks | Replaced transport must not be invoked at attempt 51 | test_live_budget_returns_to_mock_without_provider | Cap selects catalog; host must still enforce session allowance across restarts |
 
 The source of the initial code is the supplied 3.2 folder. Earlier submissions and their runtime data were left unchanged. Dates/timings in older milestones describe those versions, not this one.
+
+Clean-checkout review also found an inherited Figma capture script loading from a third-party domain in production HTML. It was removed: the final interface needs no capture helper, and ordinary exercise/support rendering should use local assets. The served-asset smoke check was corrected to select the local production module. The final clone was rebuilt and rechecked.
