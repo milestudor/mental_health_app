@@ -1,0 +1,7 @@
+{
+  "status": "NOT RUN",
+  "reason": "User confirmed no model has been configured. No API key or course-approved model is available.",
+  "real_model_calls": 0,
+  "planned": "Three relevant fictional cases repeated twice, maximum six attempts, using scripts/live_variation.py.",
+  "requirement_remaining": "Run the opt-in script and compare paired replies for meaning, consistency and role boundaries. Mocked transport checks do not establish live-model quality."
+}

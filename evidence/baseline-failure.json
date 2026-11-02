@@ -1,0 +1,18 @@
+{
+  "source": "Unmodified submission-3.2/backend/app.py",
+  "fictional": true,
+  "input": {
+    "id": "fictional-grounding",
+    "skill_id": "grounding-v1",
+    "status": "completed",
+    "active_ms": 2000,
+    "paused_ms": 0,
+    "wall_ms": 2000,
+    "checkpoint": "finished"
+  },
+  "http_status": 200,
+  "expected_skill_id": "grounding-v1",
+  "observed_skill_id": "breathing-v1",
+  "result": "FAIL: unknown input field silently ignored; database default labels grounding as breathing",
+  "decision": "Validate and persist skill_id; reject skill changes within a session; render labels from saved identity."
+}

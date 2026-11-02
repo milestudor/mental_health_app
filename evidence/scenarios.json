@@ -1,0 +1,146 @@
+[
+  {
+    "test": "test_fictional_acceptance[S01-no_typing]",
+    "scenario": "no_typing",
+    "expected": "You do not need to type",
+    "observed": "You do not need to type during an exercise. Breathing and sensory grounding require no spoken or typed responses. Grounding is self-paced; you can skip any sense.",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_fictional_acceptance[S02-breathing]",
+    "scenario": "breathing",
+    "expected": "six cycles",
+    "observed": "Breathing uses six cycles of four counts in and six counts out. Pause or stop whenever you choose.",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_fictional_acceptance[S03-controls]",
+    "scenario": "controls",
+    "expected": "Stop ends immediately",
+    "observed": "Pause freezes your place. Resume continues. Stop ends immediately. Crisis support opens independently of chat.",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_fictional_acceptance[S04-simple_profile]",
+    "scenario": "simple_profile",
+    "expected": "current view is simpler",
+    "observed": "For Alex, your current view is simpler. Breathing needs no typed answers. Pause, Stop, and crisis support stay visible. You can change your preferences or choose full view.",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_fictional_acceptance[S05-completed_history]",
+    "scenario": "completed_history",
+    "expected": "1 completed",
+    "observed": "For Alex, saved exercise history shows 1 completed and 0 stopped sessions. These are activity records, not a measure of improvement. You can review or clear them in Your days.",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_fictional_acceptance[S06-treatment]",
+    "scenario": "treatment",
+    "expected": "cannot diagnose",
+    "observed": "This coursework prototype cannot diagnose or advise on treatment. It can explain its breathing exercise.",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_fictional_acceptance[S07-crisis]",
+    "scenario": "crisis",
+    "expected": "cannot assess safety",
+    "observed": "This prototype cannot assess safety or provide crisis care. Crisis-support information is available here.",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_fictional_acceptance[S08-negated_crisis]",
+    "scenario": "negated_crisis",
+    "expected": "cannot assess safety",
+    "observed": "This prototype cannot assess safety or provide crisis care. Crisis-support information is available here.",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_fictional_acceptance[S09-injection]",
+    "scenario": "injection",
+    "expected": "mocked",
+    "observed": "mocked",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_fictional_acceptance[S10-provider_failure]",
+    "scenario": "provider_failure",
+    "expected": "fallback",
+    "observed": "fallback",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_fictional_acceptance[S11-malformed_provider]",
+    "scenario": "malformed_provider",
+    "expected": "fallback",
+    "observed": "fallback",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_fictional_acceptance[S12-provider_timeout]",
+    "scenario": "provider_timeout",
+    "expected": "fallback",
+    "observed": "fallback",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_fictional_acceptance[S13-stopped_history]",
+    "scenario": "stopped_history",
+    "expected": "1 stopped",
+    "observed": "For Alex, saved exercise history shows 0 completed and 1 stopped sessions. These are activity records, not a measure of improvement. You can review or clear them in Your days.",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_fictional_acceptance[S14-other_profile]",
+    "scenario": "other_profile",
+    "expected": "0 completed",
+    "observed": "For Sam, saved exercise history shows 0 completed and 0 stopped sessions. These are activity records, not a measure of improvement. You can review or clear them in Your days.",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_fictional_acceptance[S15-clear_history]",
+    "scenario": "clear_history",
+    "expected": "profile retained",
+    "observed": "history empty; profile retained",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_skill_identity[S16-grounding-v1-completed]",
+    "scenario": "Save fictional grounding-v1 completed",
+    "expected": "grounding-v1 / completed survives readback",
+    "observed": "grounding-v1 / completed",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_skill_identity[S17-grounding-v1-interrupted]",
+    "scenario": "Save fictional grounding-v1 interrupted",
+    "expected": "grounding-v1 / interrupted survives readback",
+    "observed": "grounding-v1 / interrupted",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  },
+  {
+    "test": "test_skill_identity[S18-breathing-v1-completed]",
+    "scenario": "Save fictional breathing-v1 completed",
+    "expected": "breathing-v1 / completed survives readback",
+    "observed": "breathing-v1 / completed",
+    "transport": "mocked; no live provider calls",
+    "result": "PASS"
+  }
+]

@@ -1,0 +1,109 @@
+{
+  "fictional": true,
+  "transport": "mock plus intercepted request failures; no live calls",
+  "checks": [
+    "B1: Simpler view preserves both exercise choices and support",
+    "B2: Support pauses grounding; closing support requires explicit Resume; Next is disabled while paused",
+    "Breathing completed in foreground real time: 60357 ms",
+    "Reload marks grounding interrupted and never auto-resumes",
+    "B3: After intercepted API failures, support and immediate Stop remain available; unsaved status is explicit"
+  ],
+  "breathingMs": 60357,
+  "consoleErrors": [],
+  "sessionEvidence": [
+    {
+      "id": "075349dd-b949-4d95-a22a-5bf6b6fdf5f3",
+      "status": "interrupted",
+      "active_ms": 48,
+      "paused_ms": 0,
+      "wall_ms": 50,
+      "checkpoint": "Notice five things you can see.",
+      "created_at": "2026-11-02T18:28:18.274087+00:00",
+      "skill_id": "grounding-v1",
+      "profile_id": "alex"
+    },
+    {
+      "id": "2f57d42b-bb9d-4822-a7ec-13764c4fd3b8",
+      "status": "interrupted",
+      "active_ms": 0,
+      "paused_ms": 0,
+      "wall_ms": 12,
+      "checkpoint": "Notice five things you can see.",
+      "created_at": "2026-11-02T18:27:55.260365+00:00",
+      "skill_id": "grounding-v1",
+      "profile_id": "alex"
+    },
+    {
+      "id": "6771496e-435f-49c7-a634-96e63f5ca3bc",
+      "status": "completed",
+      "active_ms": 60000,
+      "paused_ms": 0,
+      "wall_ms": 60013,
+      "checkpoint": "Exercise finished.",
+      "created_at": "2026-11-02T18:26:52.412328+00:00",
+      "skill_id": "breathing-v1",
+      "profile_id": "alex"
+    },
+    {
+      "id": "0541d813-63c6-4e89-9775-614f1c78cbbc",
+      "status": "completed",
+      "active_ms": 1692,
+      "paused_ms": 2300,
+      "wall_ms": 3998,
+      "checkpoint": "Exercise finished.",
+      "created_at": "2026-11-02T18:26:45.816296+00:00",
+      "skill_id": "grounding-v1",
+      "profile_id": "alex"
+    }
+  ],
+  "chapters": [
+    {
+      "seconds": 0,
+      "text": "1 · FINISHED APPLICATION — Fictional Alex. Mocked replies. No clinical or effectiveness claim."
+    },
+    {
+      "seconds": 3,
+      "text": "Self-paced grounding is an alternative to a breathing timer. No typed answers; any sense can be skipped."
+    },
+    {
+      "seconds": 7,
+      "text": "Support opens independently. Closing it leaves the exercise paused. Resume is an explicit choice."
+    },
+    {
+      "seconds": 9,
+      "text": "History preserves the skill identity. Completed means the sequence ended, including skipped senses; it is not an outcome score."
+    },
+    {
+      "seconds": 12,
+      "text": "Breathing retains its original 6 × (4 + 6) sequence. This segment runs in real time."
+    },
+    {
+      "seconds": 72,
+      "text": "Mocked personalization uses actual profile-scoped counts, not old transcripts or an inferred emotional state."
+    },
+    {
+      "seconds": 75,
+      "text": "Actual baseline API evidence: HTTP 200 concealed a wrong skill label. Earlier code defaulted every session to breathing."
+    },
+    {
+      "seconds": 84,
+      "text": "Code walkthrough — validation, identity guard and parameterized persistence. These checks establish software behavior only."
+    },
+    {
+      "seconds": 93,
+      "text": "4 · FAILURE DEMONSTRATION — Intercepted chat request fails. No live provider is contacted."
+    },
+    {
+      "seconds": 95,
+      "text": "B3 · Independent support remains available after failed chat. This recording never calls or messages a support service."
+    },
+    {
+      "seconds": 97,
+      "text": "Saving failure is visible; Stop returned home immediately. Restoring requests and Retry saves one interrupted session."
+    },
+    {
+      "seconds": 100,
+      "text": "Limits: automated fictional evaluation only. Live-model variation and human peer usability testing remain pending."
+    }
+  ]
+}
