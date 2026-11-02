@@ -1,3 +1,5 @@
+> Historical Part 3.1 reference, copied unchanged below. Proposed features and links describe that milestone; use decisions.md and technical-plan.md for current behavior.
+
 # Experience design
 
 ## Purpose and interface copy

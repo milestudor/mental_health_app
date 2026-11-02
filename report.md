@@ -1,6 +1,6 @@
 # Assignment 3.3 — Integration, Evaluation, and Demonstration
 
-**Repository:** [milestudor/mental_health_app](https://github.com/milestudor/mental_health_app), confirmed by the student. **Submitted version:** local Git tag `assignment-3.3-submission`; [intended tag link](https://github.com/milestudor/mental_health_app/tree/assignment-3.3-submission). The exact local commit is provided in the delivery’s `submission-3.3-COMMIT.txt`. This version has not been pushed; remote links/access must be verified before upload. **Status:** application integration, deterministic evaluation, local clean-checkout verification and captioned recording prepared; required live-model variation is incomplete because no model is configured.
+**Repository:** [milestudor/mental_health_app](https://github.com/milestudor/mental_health_app), confirmed by the student. **Submitted version:** local Git tag `assignment-3.3-submission`; [intended tag link](https://github.com/milestudor/mental_health_app/tree/assignment-3.3-submission). **Implementation commit:** `7292130` (final app source; evidence documentation finalized afterward). The exact tagged local commit is provided in the delivery’s `submission-3.3-COMMIT.txt`. This version has not been pushed; remote links/access must be verified before upload. **Status:** application integration, deterministic evaluation, local clean-checkout verification and captioned recording prepared; required live-model variation is incomplete because no model is configured.
 
 ## Finished application and reasoning
 

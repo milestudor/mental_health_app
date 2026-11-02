@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-02",
+  "checkout": "Local Git clone; application source commit 7292130, final evidence documentation added afterward",
+  "fresh_python_environment": true,
+  "python": "3.13.10",
+  "node": "24.20.0",
+  "install": "Pinned Python requirements installed successfully; npm ci --offline from cached lockfile succeeded",
+  "build": "PASS: Vite production build, repeated after removing unused capture script",
+  "tests": {
+    "passed": 61,
+    "failed": 0,
+    "transport": "mocked and replaced-provider fixtures; no live calls",
+    "warning": "Upstream Starlette/httpx TestClient deprecation"
+  },
+  "runtime": {
+    "root_http_status": 200,
+    "javascript_http_status": 200,
+    "chat_status": {
+      "mode": "mock",
+      "configured": false,
+      "available": true
+    },
+    "fictional_profiles": 2,
+    "external_capture_script": false
+  },
+  "limits": "Local clone and macOS only. Remote retrieval/access, Windows and Linux not tested. npm cache used; uncached package retrieval not separately tested."
+}
