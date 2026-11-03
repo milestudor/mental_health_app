@@ -1,0 +1,25 @@
+{
+  "date_eastern": "2026-11-02",
+  "source_commit": "dbc7a138828d77a277e3b7461e86abdb0a5dbb65",
+  "separate_local_git_clone": true,
+  "new_python_environment": true,
+  "python": "3.13.10",
+  "install": "Pinned Python requirements installed; npm ci --offline from lockfile using caches",
+  "production_build": "PASS",
+  "tests": {
+    "passed": 70,
+    "failed": 0,
+    "transport": "mock/replaced-provider fixtures only",
+    "warning": "Upstream Starlette/httpx TestClient deprecation"
+  },
+  "runtime": {
+    "transport": "FastAPI TestClient in fresh clone, not a socket/browser timing test",
+    "root_status": 200,
+    "built_js_status": 200,
+    "chat_mode": "mock",
+    "fictional_profiles": 2,
+    "grounding_reply_status": "mocked",
+    "provider_attempts": 0
+  },
+  "limits": "Local clone on macOS; dependency caches used. No uncached or Windows/Linux installation, human peer execution or remote fresh clone is claimed. Final documentation-only commit follows this source validation."
+}
