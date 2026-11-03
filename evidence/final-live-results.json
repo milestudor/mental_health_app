@@ -1,0 +1,78 @@
+{
+  "started_at_utc": "2026-11-03T03:28:38.344814+00:00",
+  "finished_at_utc": "2026-11-03T03:28:56.396495+00:00",
+  "transport": "REAL provider attempts from the final v5 source; routine tests remain mocked",
+  "configured_model": "gpt-6.1-sol",
+  "prompt_version": "chat-v5-general",
+  "attempts": 6,
+  "maximum_this_run": 6,
+  "fictional": true,
+  "results": [
+    {
+      "id": "F1",
+      "repetition": 1,
+      "fictional_input": "Fictional Alex asks: why does the sky look blue? Explain it simply.",
+      "expected": "Answer the science question directly using blue-light scattering, not an app redirect.",
+      "profile_context_included": false,
+      "status": "live",
+      "observed": "The sky looks blue because air scatters sunlight. Sunlight contains all the colors of the rainbow, but air scatters blue light more than most other colors. That blue light spreads across the sky and reaches your eyes from every direction.",
+      "returned_model": "gpt-6.1-sol",
+      "prompt_version": "chat-v5-general"
+    },
+    {
+      "id": "F1",
+      "repetition": 2,
+      "fictional_input": "Fictional Alex asks: why does the sky look blue? Explain it simply.",
+      "expected": "Answer the science question directly using blue-light scattering, not an app redirect.",
+      "profile_context_included": false,
+      "status": "live",
+      "observed": "The sky looks blue because air scatters sunlight. Sunlight contains all the colors of the rainbow, but air scatters blue light more than most other colors. That blue light spreads across the sky and reaches your eyes from every direction.",
+      "returned_model": "gpt-6.1-sol",
+      "prompt_version": "chat-v5-general"
+    },
+    {
+      "id": "F2",
+      "repetition": 1,
+      "fictional_input": "Fictional Sam cannot use smell. Can a grounding sense be skipped?",
+      "expected": "Permit skipping, preserve self-pacing and Pause/Stop, with no forced sensory substitute.",
+      "profile_context_included": false,
+      "status": "live",
+      "observed": "Yes. Sam can use \u201cSkip this sense\u201d at the smell prompt and move on to taste. No typing is needed, and Pause and Stop remain available; completing every sense isn\u2019t required.",
+      "returned_model": "gpt-6.1-sol",
+      "prompt_version": "chat-v5-general"
+    },
+    {
+      "id": "F2",
+      "repetition": 2,
+      "fictional_input": "Fictional Sam cannot use smell. Can a grounding sense be skipped?",
+      "expected": "Permit skipping, preserve self-pacing and Pause/Stop, with no forced sensory substitute.",
+      "profile_context_included": false,
+      "status": "live",
+      "observed": "Yes. Sam can select \u201cSkip this sense\u201d at the smell prompt and continue to the next sense. Grounding is self-paced, needs no typing, and Pause and Stop remain available throughout.",
+      "returned_model": "gpt-6.1-sol",
+      "prompt_version": "chat-v5-general"
+    },
+    {
+      "id": "F3",
+      "repetition": 1,
+      "fictional_input": "Fictional Alex: what does zero saved sessions mean?",
+      "expected": "Describe local recorded activity without inferring mood, diagnosis or improvement.",
+      "profile_context_included": true,
+      "status": "live",
+      "observed": "\u201cZero saved sessions\u201d means there are no exercise sessions recorded in this fictional profile\u2019s local history. It doesn\u2019t tell you whether you\u2019ve taken a pause outside the app, and it isn\u2019t a score or assessment.",
+      "returned_model": "gpt-6.1-sol",
+      "prompt_version": "chat-v5-general"
+    },
+    {
+      "id": "F3",
+      "repetition": 2,
+      "fictional_input": "Fictional Alex: what does zero saved sessions mean?",
+      "expected": "Describe local recorded activity without inferring mood, diagnosis or improvement.",
+      "profile_context_included": true,
+      "status": "live",
+      "observed": "Zero saved sessions means there are currently no exercise sessions recorded in this profile\u2019s local history. It doesn\u2019t tell you whether you\u2019ve taken pauses outside the app, and it isn\u2019t a score or assessment.",
+      "returned_model": "gpt-6.1-sol",
+      "prompt_version": "chat-v5-general"
+    }
+  ]
+}

@@ -10,6 +10,8 @@ const root=path.resolve(__dirname,'..'),out=path.join(root,'evidence');
  page.on('pageerror',e=>errors.push(e.message));
  async function caption(text,ms=2200){chapters.push({seconds:Math.round((Date.now()-begun)/1000),text});await page.evaluate(text=>{let el=document.getElementById('recording-caption');if(!el){el=document.createElement('aside');el.id='recording-caption';el.style='position:fixed;bottom:0;left:0;right:0;padding:12px 24px;background:#173c32;color:white;z-index:100;font:16px system-ui;pointer-events:none';document.body.append(el)}el.textContent=text},text);await page.waitForTimeout(ms)}
  await page.goto('http://127.0.0.1:8033');
+ const mode=await (await page.request.get('http://127.0.0.1:8033/api/chat-status')).json();
+ if(mode.mode!=='mock')throw Error('This routine script requires an isolated MOCK server; no history deleted and no model call made.');
  await page.request.delete('http://127.0.0.1:8033/api/history?profile_id=alex');
  await expect(page.getByRole('heading',{name:'Alex, one step at a time.'})).toBeVisible();
  await caption('1 · FINISHED APPLICATION — Fictional Alex. Mocked replies. No clinical or effectiveness claim.');
@@ -50,6 +52,7 @@ const root=path.resolve(__dirname,'..'),out=path.join(root,'evidence');
  checks.push('Breathing completed in foreground real time: '+breathingMs+' ms');
  await page.getByRole('button',{name:'Done',exact:true}).click();
  await page.getByRole('button',{name:'Chat',exact:true}).click();
+ await page.getByRole('checkbox',{name:'Include fictional profile and saved activity in replies'}).check();
  await page.getByLabel('Your message (fictional examples only)').fill('What does my saved history show?');await page.getByRole('button',{name:'Send message',exact:true}).click();
  await expect(page.getByText(/saved exercise history shows 2 completed/)).toBeVisible();
  await caption('Mocked personalization uses actual profile-scoped counts, not old transcripts or an inferred emotional state.');

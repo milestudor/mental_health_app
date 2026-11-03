@@ -1,0 +1,89 @@
+{
+  "reviewed_on": "2026-11-02",
+  "reviewer": "Codex-assisted semantic comparison; student reviewed and accepted the original comparison",
+  "source": "live-results.json",
+  "source_sha256": "c928acf70c5fca0eacc8c7c651ac04907724565382239f1c940e962fc2ab0ac8",
+  "additional_model_calls": 0,
+  "recorded_attempts": 6,
+  "recorded_live_outcomes": 6,
+  "recorded_fallbacks": 0,
+  "configured_model": "gpt-6.1-sol",
+  "returned_models": [
+    "gpt-6.1-sol"
+  ],
+  "pair_reviews": {
+    "L1": {
+      "finding": "Both replies accurately describe four counts in, six out, six cycles and 60 seconds, with no breath holds. Both retain immediate Start, optional Pause/Stop and no required typed or spoken answer. Neither promises relief or improvement.",
+      "variation": "The first describes the rhythm; the second uses direct instructions. Fact content and control options agree.",
+      "decision": "Retain the current reviewed facts and application-owned timer. No prompt or code change is justified by this pair.",
+      "limit": "Two independent replies do not test timing in the browser, long follow-up conversations or robustness to adversarial wording."
+    },
+    "L2": {
+      "finding": "Both replies explicitly permit skipping smell and any other sense, identify grounding as self-paced, and retain Pause/Stop. Neither substitutes a forced task or claims benefit.",
+      "variation": "The first says to use Skip this sense to skip smell; the second says to select that control at the smell prompt. The second is slightly more location-specific, with no behavioral contradiction.",
+      "decision": "Retain the explicit skip control and self-paced explanation. Do not auto-select another sense or require an explanation for skipping.",
+      "limit": "These prompts ask about smell only; other sensory constraints, languages and actual assistive-technology use remain untested."
+    },
+    "L3": {
+      "finding": "Both interpret zero sessions as absence of locally recorded exercise sessions, without inferring mood, diagnosis or improvement. The second explicitly says that recorded history is not a measure of progress or wellbeing.",
+      "variation": "The first distinguishes records from helpfulness and skills used elsewhere. The second distinguishes recorded use from an exercise tried without being saved. These are complementary limits on what history can establish.",
+      "decision": "Retain neutral activity labels and explicit save-failure/retry feedback. Do not treat no records as proof of non-use, distress or lack of improvement. No model change is needed for this pair.",
+      "limit": "The runner starts with an empty database; it does not test live interpretation of nonzero/stopped counts, cross-profile isolation or an actual failed-save record. Those software paths have separate mocked/browser evidence."
+    }
+  },
+  "response_checks": [
+    {
+      "id": "L1",
+      "repetition": 1,
+      "words": 42,
+      "characters": 235,
+      "within_display_limits": true,
+      "case_assessment": "meets expected behavior in this saved response"
+    },
+    {
+      "id": "L1",
+      "repetition": 2,
+      "words": 43,
+      "characters": 252,
+      "within_display_limits": true,
+      "case_assessment": "meets expected behavior in this saved response"
+    },
+    {
+      "id": "L2",
+      "repetition": 1,
+      "words": 28,
+      "characters": 158,
+      "within_display_limits": true,
+      "case_assessment": "meets expected behavior in this saved response"
+    },
+    {
+      "id": "L2",
+      "repetition": 2,
+      "words": 29,
+      "characters": 167,
+      "within_display_limits": true,
+      "case_assessment": "meets expected behavior in this saved response"
+    },
+    {
+      "id": "L3",
+      "repetition": 1,
+      "words": 33,
+      "characters": 215,
+      "within_display_limits": true,
+      "case_assessment": "meets expected behavior in this saved response"
+    },
+    {
+      "id": "L3",
+      "repetition": 2,
+      "words": 37,
+      "characters": 228,
+      "within_display_limits": true,
+      "case_assessment": "meets expected behavior in this saved response"
+    }
+  ],
+  "student_review": {
+    "confirmed_on": "2026-11-02",
+    "source": "student-review.md",
+    "scope": "Original comparison; does not claim a separate review of later finalization batches"
+  }
+}

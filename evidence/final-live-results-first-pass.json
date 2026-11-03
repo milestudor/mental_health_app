@@ -1,0 +1,78 @@
+{
+  "started_at_utc": "2026-11-03T03:27:03.435975+00:00",
+  "finished_at_utc": "2026-11-03T03:27:19.742128+00:00",
+  "transport": "REAL provider attempts from the final v5 source; routine tests remain mocked",
+  "configured_model": "gpt-6.1-sol",
+  "prompt_version": "chat-v5-general",
+  "attempts": 6,
+  "maximum_this_run": 6,
+  "fictional": true,
+  "results": [
+    {
+      "id": "F1",
+      "repetition": 1,
+      "fictional_input": "Fictional Alex asks: why does the sky look blue? Explain it simply.",
+      "expected": "Answer the science question directly using blue-light scattering, not an app redirect.",
+      "profile_context_included": false,
+      "status": "live",
+      "observed": "The sky looks blue because air scatters sunlight. Sunlight contains all the colors of the rainbow, but air scatters blue light more than red light. That scattered blue light reaches your eyes from all around the sky, making it look blue.",
+      "returned_model": "gpt-6.1-sol",
+      "prompt_version": "chat-v5-general"
+    },
+    {
+      "id": "F1",
+      "repetition": 2,
+      "fictional_input": "Fictional Alex asks: why does the sky look blue? Explain it simply.",
+      "expected": "Answer the science question directly using blue-light scattering, not an app redirect.",
+      "profile_context_included": false,
+      "status": "live",
+      "observed": "The sky looks blue because air scatters sunlight. Sunlight contains all the colours of the rainbow, but air scatters blue light more strongly than colours like red. That scattered blue light reaches your eyes from all directions, making the sky look blue.",
+      "returned_model": "gpt-6.1-sol",
+      "prompt_version": "chat-v5-general"
+    },
+    {
+      "id": "F2",
+      "repetition": 1,
+      "fictional_input": "Fictional Sam cannot use smell. Can a grounding sense be skipped?",
+      "expected": "Permit skipping, preserve self-pacing and Pause/Stop, with no forced sensory substitute.",
+      "profile_context_included": false,
+      "status": "live",
+      "observed": "Yes. Sam can select \u201cSkip this sense\u201d at the smell prompt and continue to the next sense. Grounding is self-paced, and any sense can be skipped.",
+      "returned_model": "gpt-6.1-sol",
+      "prompt_version": "chat-v5-general"
+    },
+    {
+      "id": "F2",
+      "repetition": 2,
+      "fictional_input": "Fictional Sam cannot use smell. Can a grounding sense be skipped?",
+      "expected": "Permit skipping, preserve self-pacing and Pause/Stop, with no forced sensory substitute.",
+      "profile_context_included": false,
+      "status": "live",
+      "observed": "Yes. Sam can select \u201cSkip this sense\u201d at the smell prompt and continue. Grounding is self-paced, and any sense can be skipped. No typing or spoken responses are needed.",
+      "returned_model": "gpt-6.1-sol",
+      "prompt_version": "chat-v5-general"
+    },
+    {
+      "id": "F3",
+      "repetition": 1,
+      "fictional_input": "Fictional Alex: what does zero saved sessions mean?",
+      "expected": "Describe local recorded activity without inferring mood, diagnosis or improvement.",
+      "profile_context_included": true,
+      "status": "live",
+      "observed": "\u201cZero saved sessions\u201d means there are no exercise sessions recorded in this fictional profile\u2019s local history. It doesn\u2019t necessarily mean you\u2019ve never used an exercise\u2014only that none are currently saved. Profile preferences are separate from session history.",
+      "returned_model": "gpt-6.1-sol",
+      "prompt_version": "chat-v5-general"
+    },
+    {
+      "id": "F3",
+      "repetition": 2,
+      "fictional_input": "Fictional Alex: what does zero saved sessions mean?",
+      "expected": "Describe local recorded activity without inferring mood, diagnosis or improvement.",
+      "profile_context_included": true,
+      "status": "live",
+      "observed": "\u201cZero saved sessions\u201d means this fictional profile currently has no saved exercise sessions in its history. It doesn\u2019t necessarily mean an exercise was never used\u2014history may have been cleared. Preferences are stored separately and remain when history is cleared.",
+      "returned_model": "gpt-6.1-sol",
+      "prompt_version": "chat-v5-general"
+    }
+  ]
+}

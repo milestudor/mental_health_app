@@ -3,7 +3,7 @@ import httpx
 import pytest
 from test_app import app
 
-@pytest.mark.parametrize('reply,valid', [('Hi. What would you like to know about the breathing exercise?',True),('',False),('x'*601,False)])
+@pytest.mark.parametrize('reply,valid', [('Hi. What would you like to know about the breathing exercise?',True),('',False),('x'*4001,False)])
 def test_live_reply_validation_and_context(app,monkeypatch,reply,valid):
  mod,c=app;mod.MODE='live'
  monkeypatch.setenv('OPENAI_API_KEY','fixture-only')

@@ -1,0 +1,59 @@
+{
+  "reviewed_on": "2026-11-02",
+  "prompt_version": "chat-v5-general",
+  "fictional": true,
+  "transport": "Two real provider requests through the local browser UI; separate from mocked tests",
+  "agent_live_attempts": 2,
+  "recorded_live_replies": 2,
+  "messages": [
+    {
+      "role": "user",
+      "text": "Fictional Alex asks: why does the sky look blue? Explain it simply.",
+      "status": "saved",
+      "model_id": null,
+      "prompt_version": "chat-v5-general",
+      "context_ids": "[]"
+    },
+    {
+      "role": "assistant",
+      "text": "Sunlight looks white, but it contains all the colors of the rainbow. As it passes through the air, tiny gas molecules scatter the blue light more than most other colors, sending it in many directions. That scattered blue light reaches your eyes from all across the sky, making it look blue.",
+      "status": "live",
+      "model_id": "gpt-6.1-sol",
+      "prompt_version": "chat-v5-general",
+      "context_ids": "[\"breathing-v1\", \"controls-v1\", \"no-typing-v1\", \"profile-context-off-v1\", \"live-general-conversation-v2\"]"
+    },
+    {
+      "role": "user",
+      "text": "Now explain that to a ten-year-old in two sentences.",
+      "status": "saved",
+      "model_id": null,
+      "prompt_version": "chat-v5-general",
+      "context_ids": "[]"
+    },
+    {
+      "role": "assistant",
+      "text": "Sunlight contains all the colors of the rainbow, even though it looks white. Air scatters blue light more than most other colors, sending it all around the sky and making the sky look blue.",
+      "status": "live",
+      "model_id": "gpt-6.1-sol",
+      "prompt_version": "chat-v5-general",
+      "context_ids": "[\"breathing-v1\", \"controls-v1\", \"no-typing-v1\", \"profile-context-off-v1\", \"live-general-conversation-v2\"]"
+    }
+  ],
+  "profile_context_snapshots": [
+    {
+      "profile_context_included": false
+    },
+    {
+      "profile_context_included": false
+    }
+  ],
+  "observed_browser_checks": [
+    "General science question received a relevant live answer instead of app redirection",
+    "Follow-up referred to the same topic and produced two sentences",
+    "Profile sharing started off; response context snapshot confirms no saved profile/counts included",
+    "New chat cleared the visible conversation and reset its ID for future messages",
+    "Independent support opened and closed from chat; no support service contacted"
+  ],
+  "semantic_review": "Both replies explain blue-light scattering; the follow-up satisfies the two-sentence request. This checks one topic and one follow-up, not arbitrary question reliability.",
+  "limits": "No web tools; no current-information check. No recorded latency/cost. Old six-case live evidence describes the prior prompt, not this broader scope."
+}

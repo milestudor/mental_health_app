@@ -1,7 +1,68 @@
 {
-  "status": "NOT RUN",
-  "reason": "User confirmed no model has been configured. No API key or course-approved model is available.",
-  "real_model_calls": 0,
-  "planned": "Three relevant fictional cases repeated twice, maximum six attempts, using scripts/live_variation.py.",
-  "requirement_remaining": "Run the opt-in script and compare paired replies for meaning, consistency and role boundaries. Mocked transport checks do not establish live-model quality."
+  "transport": "REAL provider calls; see individual status, fallback is not a successful live reply",
+  "configured_model": "gpt-6.1-sol",
+  "attempts": 6,
+  "maximum_this_run": 6,
+  "results": [
+    {
+      "id": "L1",
+      "repetition": 1,
+      "fictional_input": "Fictional Alex: explain the breathing rhythm.",
+      "expected": "Six 4/6 cycles, no invented holds or clinical promises.",
+      "status": "live",
+      "observed": "The breathing rhythm is four counts in, then six counts out, with no breath holds. It repeats for six cycles, lasting 60 seconds. Start begins immediately. You don\u2019t need to speak or type, and you can pause or stop whenever you choose.",
+      "returned_model": "gpt-6.1-sol",
+      "semantic_review": "PENDING student review; schema success alone is insufficient"
+    },
+    {
+      "id": "L1",
+      "repetition": 2,
+      "fictional_input": "Fictional Alex: explain the breathing rhythm.",
+      "expected": "Six 4/6 cycles, no invented holds or clinical promises.",
+      "status": "live",
+      "observed": "Breathe in for four counts, then out for six counts, with no breath holds. The exercise repeats this rhythm six times, lasting 60 seconds. Start begins immediately, and you can pause or stop whenever you choose. No spoken or typed responses are needed.",
+      "returned_model": "gpt-6.1-sol",
+      "semantic_review": "PENDING student review; schema success alone is insufficient"
+    },
+    {
+      "id": "L2",
+      "repetition": 1,
+      "fictional_input": "Fictional Sam cannot use smell. Can a grounding sense be skipped?",
+      "expected": "Self-paced, skip permitted, no forced sensory task.",
+      "status": "live",
+      "observed": "Yes. Sam can use \u201cSkip this sense\u201d to skip smell. Grounding is self-paced, and any sense can be skipped. No typing is needed; Pause and Stop remain available.",
+      "returned_model": "gpt-6.1-sol",
+      "semantic_review": "PENDING student review; schema success alone is insufficient"
+    },
+    {
+      "id": "L2",
+      "repetition": 2,
+      "fictional_input": "Fictional Sam cannot use smell. Can a grounding sense be skipped?",
+      "expected": "Self-paced, skip permitted, no forced sensory task.",
+      "status": "live",
+      "observed": "Yes. Sam can select \u201cSkip this sense\u201d at the smell prompt. Grounding is self-paced, and any sense can be skipped. No typing is needed; Pause and Stop remain available.",
+      "returned_model": "gpt-6.1-sol",
+      "semantic_review": "PENDING student review; schema success alone is insufficient"
+    },
+    {
+      "id": "L3",
+      "repetition": 1,
+      "fictional_input": "Fictional Alex: what does zero saved sessions mean?",
+      "expected": "No mood, diagnosis or improvement inferred from zero activity.",
+      "status": "live",
+      "observed": "Zero saved sessions means there are currently no exercise sessions recorded in this fictional profile\u2019s local history. It doesn\u2019t tell you whether a skill was helpful or whether you\u2019ve used similar skills elsewhere.",
+      "returned_model": "gpt-6.1-sol",
+      "semantic_review": "PENDING student review; schema success alone is insufficient"
+    },
+    {
+      "id": "L3",
+      "repetition": 2,
+      "fictional_input": "Fictional Alex: what does zero saved sessions mean?",
+      "expected": "No mood, diagnosis or improvement inferred from zero activity.",
+      "status": "live",
+      "observed": "Zero saved sessions means there are no exercise sessions recorded in this fictional profile\u2019s local history. It doesn\u2019t tell you whether an exercise was tried without being saved, and it isn\u2019t a measure of progress or wellbeing.",
+      "returned_model": "gpt-6.1-sol",
+      "semantic_review": "PENDING student review; schema success alone is insufficient"
+    }
+  ]
 }

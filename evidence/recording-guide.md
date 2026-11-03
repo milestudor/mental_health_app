@@ -19,4 +19,8 @@
 
 The failure evidence page shows the real baseline API result, not an app screen. The next page explains the actual generated validation/persistence code. The final section shows intercepted chat and save failures in the working app. No support service is contacted. The baseline fixture and browser checks are separate observations, clearly labeled.
 
-Before submission, the student should watch the full recording, check the code explanation in their own words, and verify that the instructor can access the file. A narrated human presentation may be added if required by the instructor; no student rehearsal or participant review is claimed.
+The student has watched and approved this recording, stated no additional narration is needed, and confirmed professor access; see [student-review.md](student-review.md). No peer-participant test or narrated student rehearsal is claimed.
+
+Update after the recording: the student subsequently ran six live-model checks; see [original results](live-results.json) and [assisted comparison](live-review.md). The final on-screen caption saying live variation is pending refers to the recorded checkpoint and is not the current written evidence status. No recording has been altered or rerecorded as part of this documentation review.
+
+The later general-chat revision is also outside this recording’s scope. See [current design/evidence](../design/general-chat.md), [two real UI calls](general-chat-live.json) and [screenshot](general-chat-preview.png). The historical recording still documents exercise flow and the selected failure/process evidence; it is not a recording of the current general chatbot.
